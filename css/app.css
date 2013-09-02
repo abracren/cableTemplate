@@ -1,0 +1,60 @@
+.container_second
+{
+	z-index: 10000 !important;
+	position: absolute;
+	width: 100%;
+}
+#menuItem
+{
+	margin-top: 50px;
+	margin-bottom: 500px;
+}
+#conta
+{
+	position: absolute;
+	width: 100%;
+}
+#Menu1Content
+{
+	background-color: #CFA1A1;
+	visibility: hidden;
+	margin-left: 1.95em;
+	margin-right: 1.95em;
+	height: 0px;
+}
+.Items
+{
+	background-color: #C14C4C;
+	padding: 8px;
+}
+.dropdown
+{
+	min-width: 100%;
+	width: 100%;
+}
+.custom.dropdown
+{
+	min-width: 554% !important;
+	margin-right: -100px;
+}
+BODY
+{
+	background-color: transparent;
+}
+HTML
+{
+	background-color: transparent;
+}
+.orbit-container
+{
+	background-color: transparent;
+}
+.top-bar
+{
+	max-height: 45px;
+	margin-bottom: 0px;
+}
+.disa
+{
+	display: none;
+}
