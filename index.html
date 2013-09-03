@@ -15,34 +15,40 @@
   <link rel="stylesheet" href="css/app.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/mQueries.css">
+  <link rel="stylesheet" href="css/general_foundicons.css">
+  <link rel="stylesheet" href="css/general_foundicons_ie7.css">
   
 
   <script src="js/vendor/custom.modernizr.js"></script>
+ 
 
 </head>
 <body>
  
+
+                
+
 	
 
 <div id="conta"class="roe">
 <div id="orbitBack"class="roe">
     <div class="large-12 columns singut">
     <ul id="featured1" data-orbit>
-  <li>
+  <li data-orbit-slide="headline-1">
    
-     <img src="/template2/img/place_1900.svg" />
+     <img src="/template2/img/svglines_1900.svg" />
      
       
 	  
   </li>
-  <li>
+  <li data-orbit-slide="headline-2">
     
-	 <img src="/template2/img/place_1900.svg" />
+	 <img src="/template2/img/svglines2_1900.svg" />
     
 	
   </li>
-  <li>
-     <img src="/template2/img/place_1900.svg" />
+  <li data-orbit-slide="headline-3">
+     <img src="/template2/img/svglines5_1900.svg" />
    
 
 	 
@@ -57,19 +63,67 @@
   
  <div class="large-12 columns">
  
+                    <!-- menu principal -->
+<div class="row"><div id="primary-navigation" class="large-12 columns">
+   <div class="row"> <nav>
 
- 
- <div class="large-2 columns singut"><div class="Items" id="menu2">Menu2</div></div>
- <div class="large-2 columns singut"><div class="Items" id="Menu1">Menu1</div></div>
- <div class="large-2 columns singut"><div class="Items" id="menu2">Menu2</div></div>
- <div class="large-2 columns singut"><div class="Items" id="menu2">Menu2</div></div>
- <div class="large-2 columns singut"><div class="Items" id="menu2">Menu2</div></div>
- <div class="large-2 columns singut"><div class="Items" id="menu2">Menu2</div></div>
- 
- </div>
- 
+   <li id="nav-1" class="large-3 columns">
+                    <img src="/template2/img/logo.svg" />
+			</li>
+			    <li id="nav-2" class="Items large-3 columns">
+                    <a href="" target="" class="first-level nav-2">Televisi&#243;n</a>              			
+			</li>
+			    <li id="nav-3" class="Items large-3 columns" >
+                    <a href="" target=""class="first-level nav-3">Internet</a>              			
+			</li>
+			    <li id="nav-4" class="Items large-3 columns">
+                    <a href="" target="" class="first-level nav-4">Info &#218;til</a>              			
+			</li>
+			
+           
+          </ul>
+</nav></div></div></div>
+        	    <!-- INI DropDown Background -->
+        		<div class="dropDownBack large-12 columns"><div class="content"></div></div>
+
+<div id="dd-nav-2" class="dropDown">
+    <div class="dropDownContent">
+             <div class="divInfo5">
+                   
+					  <div class="row">
+					  <div class="large-12 columns">
+					  <div class="large-3 columns penal"> 
+					 <div class="dropIcons"> <i class="foundicon-edit"></i></div>
+                    </div>
+                    <div class="large-3 columns  penal "> 					
+                       2
+					</div>
+					  <div class="large-3 columns  penal "> 
+                      3
+					  </div>
+					   <div class="large-3 columns  penal"> 
+                      4 
+					  </div></div></div>
+
+            </div>
+           
+	</div>
+</div>
+
    
-  
+  <div class="row">
+  <div id="mainDown"class="large-12 columns">
+  <div class="row">
+  <div id="bullet-custom"class="large-12 columns singut">
+  <div id="bott1" class="large-4 columns singut labelBott roundI"><a href="#" data-orbit-link="headline-1">Slider 1</a></div>
+  <div id="bott2" class="large-4 columns singut labelBott" ><a href="#" data-orbit-link="headline-2">Slider 2</a></div>
+  <div id="bott3" class="large-4 columns singut labelBott roundD"><a href="#" data-orbit-link="headline-3">Slider 3</a></div>
+  </div>
+  </div>
+ 
+
+  </div>
+  </div>
   <div class="row" id="Menu1Content">
 		<div class="large-4 columns disa ">
       <img src="/template2/img/place_400_300.svg" />
@@ -89,7 +143,7 @@
     </div>
     
   
-  </div></div>
+  </div>
   
 
 
@@ -98,7 +152,7 @@
   
 <!-- Three-up Content Blocks -->
  
-	<div class="row">
+	<div id="threeblock" class="row">
 		<div class="large-4 columns">
       <img src="/template2/img/place_400_300.svg" />
       <h4>This is a content section.</h4>
@@ -144,8 +198,11 @@
     <div class="large-12 columns">
       <hr />
       <div class="row">
-        <div class="large-6 columns">
-          <p>&copy; Copyright no one at all. Go to town.</p>
+        <div id="panelito" class="large-6 columns">
+         
+
+<!-- Now link to the slides above -->
+
         </div>
         <div class="large-6 columns">
           <ul class="inline-list right">
@@ -167,8 +224,19 @@
   '.js><\/script>')
   </script>
   <script src="js/foundation.min.js"></script>
-  <script>
-    $(document).foundation();
+   
+   <script>
+    $(document)
+	.foundation('orbit', {
+	     animation: 'fade',
+		   timer_speed: 5000,
+		animation_speed: 5000,
+		   slide_number: false,
+		bullets: false,
+		 navigation_arrows: false,
+		}, function(response){
+			console.log(response.errors);
+	});
   </script>
 <!-- End Footer -->
   <script>
