@@ -29,5 +29,13 @@
 		
 		try{$('#primary-navigation li').removeClass('active');} catch(e){};
 	});
+	/*
+	$(document).ready(function(){
+	var viewportWidth = $(window).width();
 	
-	
+	var Tempo= viewportWidth/100*30;
+	var sliderTop=(1*Tempo)*-1; 
+	$('.sliderSub').css('margin-top',sliderTop+"px")
+	console.log(sliderTop);
+	});
+	*/
